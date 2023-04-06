@@ -60,4 +60,17 @@ public final class ConfirmQuitDialogInteraction extends CustomViewInteraction {
 				.check(matcher);
 		return this;
 	}
+	public ConfirmQuitDialogInteraction checkPositiveButton(ViewAssertion matcher) {
+		onPositiveButton()
+				.check(matcher);
+		return this;
+	}
+
+	public ConfirmQuitDialogInteraction checkPositiveButton(ViewAssertion matcher) {
+		onPositiveButton()
+				.check(matcher);
+		return this;
+	}
+
+	
 }

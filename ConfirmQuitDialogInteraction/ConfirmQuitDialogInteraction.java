@@ -57,18 +57,7 @@ public final class ConfirmQuitDialogInteraction extends CustomViewInteraction {
 		return onView(allOf(withId(android.R.id.button2), withText(R.string.discard_button_text), isAssignableFrom(Button.class)));
 	}
 
-	public ConfirmQuitDialogInteraction checkNegativeButton(ViewAssertion matcher) {
-		onNegativeButton()
-				.check(matcher);
-		return this;
-	}
-
-	public ConfirmQuitDialogInteraction checkNeutralButton(ViewAssertion matcher) {
-		onView(withId(android.R.id.button3))
-				.check(matcher);
-		return this;
-	}
-
+	
 	public ConfirmQuitDialogInteraction checkMessage(ViewAssertion matcher) {
 		onView(withText(R.string.closing_security_question))
 				.check(matcher);

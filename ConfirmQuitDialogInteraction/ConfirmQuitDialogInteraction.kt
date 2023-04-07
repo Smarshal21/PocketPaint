@@ -24,7 +24,6 @@ import androidx.test.espresso.ViewAssertion
 import androidx.test.espresso.ViewInteraction
 import androidx.test.espresso.matcher.RootMatchers
 import androidx.test.espresso.matcher.ViewMatchers
-import org.catrobat.paintroid.R
 import org.hamcrest.Matchers
 
 class ConfirmQuitDialogInteraction private constructor() : CustomViewInteraction(

@@ -49,17 +49,7 @@ class ConfirmQuitDialogInteraction private constructor() : CustomViewInteraction
         return this
     }
 
-    fun onNegativeButton(): ViewInteraction {
-        return Espresso.onView(
-            Matchers.allOf(
-                ViewMatchers.withId(android.R.id.button2),
-                ViewMatchers.withText(R.string.discard_button_text),
-                ViewMatchers.isAssignableFrom(
-                    Button::class.java
-                )
-            )
-        )
-    }
+   
 
     fun checkNegativeButton(matcher: ViewAssertion?): ConfirmQuitDialogInteraction {
         onNegativeButton()

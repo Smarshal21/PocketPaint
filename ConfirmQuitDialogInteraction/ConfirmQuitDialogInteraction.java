@@ -42,18 +42,7 @@ public final class ConfirmQuitDialogInteraction extends CustomViewInteraction {
 	public ViewInteraction onPositiveButton() {
 		return onView(allOf(withId(android.R.id.button1), withText(R.string.save_button_text), isAssignableFrom(Button.class)));
 	}
-	 fun onNegativeButton(): ViewInteraction {
-        return Espresso.onView(
-            Matchers.allOf(
-                ViewMatchers.withId(android.R.id.button2),
-                ViewMatchers.withText(R.string.discard_button_text),
-                ViewMatchers.isAssignableFrom(
-                    Button::class.java
-                )
-            )
-        )
-    }
-
+	 
 	
 	public ViewInteraction onNegativeButton() {
 		return onView(allOf(withId(android.R.id.button2), withText(R.string.discard_button_text), isAssignableFrom(Button.class)));

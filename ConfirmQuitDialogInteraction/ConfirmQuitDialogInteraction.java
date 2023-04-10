@@ -38,10 +38,6 @@ public final class ConfirmQuitDialogInteraction extends CustomViewInteraction {
 	public static ConfirmQuitDialogInteraction onConfirmQuitDialog() {
 		return new ConfirmQuitDialogInteraction();
 	}
-
-	public ViewInteraction onPositiveButton() {
-		return onView(allOf(withId(android.R.id.button1), withText(R.string.save_button_text), isAssignableFrom(Button.class)));
-	}
 	 
 	
 	public ViewInteraction onNegativeButton() {

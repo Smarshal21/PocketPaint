@@ -19,16 +19,6 @@
 
 package org.catrobat.paintroid.test.espresso.util.wrappers;
 
-import android.widget.Button;
-
-import org.catrobat.paintroid.R;
-
-import androidx.test.espresso.ViewAssertion;
-import androidx.test.espresso.ViewInteraction;
-
-import static org.hamcrest.Matchers.allOf;
-import static androidx.test.espresso.matcher.ViewMatchers.withId;
-import static androidx.test.espresso.matcher.ViewMatchers.withText;
 
 public final class ConfirmQuitDialogInteraction extends CustomViewInteraction {
 	private ConfirmQuitDialogInteraction() {

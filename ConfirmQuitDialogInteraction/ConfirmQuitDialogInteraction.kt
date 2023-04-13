@@ -4,11 +4,6 @@ package org.catrobat.paintroid.test.espresso.util.wrappers
 import android.widget.Button
 import androidx.test.espresso.Espresso
 import androidx.test.espresso.ViewAssertion
-import androidx.test.espresso.ViewInteraction
-import androidx.test.espresso.matcher.RootMatchers
-import androidx.test.espresso.matcher.ViewMatchers
-import org.hamcrest.Matchers
-
 class ConfirmQuitDialogInteraction private constructor() : CustomViewInteraction(
     Espresso.onView(ViewMatchers.withText(R.string.closing_security_question))
         .inRoot(RootMatchers.isDialog())

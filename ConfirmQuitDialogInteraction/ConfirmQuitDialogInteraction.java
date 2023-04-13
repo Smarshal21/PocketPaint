@@ -17,18 +17,6 @@
  *  along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
 
-package org.catrobat.paintroid.test.espresso.util.wrappers;
-
-
-public final class ConfirmQuitDialogInteraction extends CustomViewInteraction {
-	private ConfirmQuitDialogInteraction() {
-		super(onView(withText(R.string.closing_security_question)).inRoot(isDialog()));
-	}
-
-	public static ConfirmQuitDialogInteraction onConfirmQuitDialog() {
-		return new ConfirmQuitDialogInteraction();
-	}
-	 
 	
 	public ViewInteraction onNegativeButton() {
 		return onView(allOf(withId(android.R.id.button2), withText(R.string.discard_button_text), isAssignableFrom(Button.class)));

@@ -7,11 +7,7 @@
         return this
     }
 
-    fun checkNeutralButton(matcher: ViewAssertion?): ConfirmQuitDialogInteraction {
-        Espresso.onView(ViewMatchers.withId(android.R.id.button3))
-            .check(matcher)
-        return this
-    }
+    
 
     fun checkMessage(matcher: ViewAssertion?): ConfirmQuitDialogInteraction {
         Espresso.onView(ViewMatchers.withText(R.string.closing_security_question))

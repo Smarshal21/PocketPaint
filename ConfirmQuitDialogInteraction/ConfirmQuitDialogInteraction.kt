@@ -1,11 +1,3 @@
- {
-  
-
-    fun checkNegativeButton(matcher: ViewAssertion?): ConfirmQuitDialogInteraction {
-        onNegativeButton()
-            .check(matcher)
-        return this
-    }
 
     
 

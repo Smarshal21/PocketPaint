@@ -1,23 +1,5 @@
  {
-    fun onPositiveButton(): ViewInteraction {
-        return Espresso.onView(
-            Matchers.allOf(
-                ViewMatchers.withId(android.R.id.button1),
-                ViewMatchers.withText(R.string.save_button_text),
-                ViewMatchers.isAssignableFrom(
-                    Button::class.java
-                )
-            )
-        )
-    }
-
-    fun checkPositiveButton(matcher: ViewAssertion?): ConfirmQuitDialogInteraction {
-        onPositiveButton()
-            .check(matcher)
-        return this
-    }
-
-   
+  
 
     fun checkNegativeButton(matcher: ViewAssertion?): ConfirmQuitDialogInteraction {
         onNegativeButton()

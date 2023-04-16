@@ -1,13 +1,4 @@
-
-package org.catrobat.paintroid.test.espresso.util.wrappers
-
-import android.widget.Button
-import androidx.test.espresso.Espresso
-import androidx.test.espresso.ViewAssertion
-class ConfirmQuitDialogInteraction private constructor() : CustomViewInteraction(
-    Espresso.onView(ViewMatchers.withText(R.string.closing_security_question))
-        .inRoot(RootMatchers.isDialog())
-) {
+ {
     fun onPositiveButton(): ViewInteraction {
         return Espresso.onView(
             Matchers.allOf(
